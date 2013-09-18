@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical" >
+       
+    <EditText
+    android:id="@+id/event_name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/event_name"
+    android:inputType="text" />
+
+      <Button
+        android:id="@+id/pickcontact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Contact" />
+
+      <TextView
+       android:id="@+id/contactName"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" />
+      
+      <Button 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="Pick Date" 
+    android:onClick="showDatePickerDialog" />
+      
+      <TextView
+       android:id="@+id/pickDate"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" />
+      
+      <Button 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="Pick Time" 
+    android:onClick="showTimePickerDialog" />
+      
+      <TextView
+       android:id="@+id/pickTime"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" />
+      
+      
+      <Button 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="Select Location" 
+    android:onClick="selectLocation" />
+
+       <TextView
+       android:id="@+id/latlong"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" />
+      
+      <Button 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="Send Data" 
+    android:onClick="sendData" />
+      
+      
+      
+      
+
+ </LinearLayout>
